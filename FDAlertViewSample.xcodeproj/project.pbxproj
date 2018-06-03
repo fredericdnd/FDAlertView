@@ -12,6 +12,11 @@
 		267EE1A220C4482700D7F869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267EE1A020C4482700D7F869 /* Main.storyboard */; };
 		267EE1A420C4482800D7F869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267EE1A320C4482800D7F869 /* Assets.xcassets */; };
 		267EE1A720C4482800D7F869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267EE1A520C4482800D7F869 /* LaunchScreen.storyboard */; };
+		267EE1B420C4490F00D7F869 /* FDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EE1B320C4490F00D7F869 /* FDAlertView.swift */; };
+		267EE1B620C44A4C00D7F869 /* FDAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EE1B520C44A4C00D7F869 /* FDAlertAction.swift */; };
+		267EE1B820C44CB700D7F869 /* FDAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267EE1B720C44CB700D7F869 /* FDAlertView.xib */; };
+		267EE1BA20C44FCB00D7F869 /* FDAlertViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EE1B920C44FCB00D7F869 /* FDAlertViewAnimation.swift */; };
+		267EE1BE20C4783F00D7F869 /* SetLetterSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EE1BD20C4783F00D7F869 /* SetLetterSpacing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		267EE1A320C4482800D7F869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267EE1A620C4482800D7F869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		267EE1A820C4482800D7F869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267EE1B320C4490F00D7F869 /* FDAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAlertView.swift; sourceTree = "<group>"; };
+		267EE1B520C44A4C00D7F869 /* FDAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAlertAction.swift; sourceTree = "<group>"; };
+		267EE1B720C44CB700D7F869 /* FDAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDAlertView.xib; sourceTree = "<group>"; };
+		267EE1B920C44FCB00D7F869 /* FDAlertViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDAlertViewAnimation.swift; sourceTree = "<group>"; };
+		267EE1BD20C4783F00D7F869 /* SetLetterSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetLetterSpacing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		267EE19020C4482700D7F869 = {
 			isa = PBXGroup;
 			children = (
+				267EE1AF20C4489C00D7F869 /* FDAlertView */,
 				267EE19B20C4482700D7F869 /* FDAlertViewSample */,
 				267EE19A20C4482700D7F869 /* Products */,
 			);
@@ -55,13 +66,49 @@
 			isa = PBXGroup;
 			children = (
 				267EE19C20C4482700D7F869 /* AppDelegate.swift */,
-				267EE19E20C4482700D7F869 /* ViewController.swift */,
-				267EE1A020C4482700D7F869 /* Main.storyboard */,
-				267EE1A320C4482800D7F869 /* Assets.xcassets */,
-				267EE1A520C4482800D7F869 /* LaunchScreen.storyboard */,
+				267EE1B020C448E200D7F869 /* ui */,
+				267EE1B120C448E700D7F869 /* ressources */,
 				267EE1A820C4482800D7F869 /* Info.plist */,
 			);
 			path = FDAlertViewSample;
+			sourceTree = "<group>";
+		};
+		267EE1AF20C4489C00D7F869 /* FDAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				267EE1B720C44CB700D7F869 /* FDAlertView.xib */,
+				267EE1B320C4490F00D7F869 /* FDAlertView.swift */,
+				267EE1B920C44FCB00D7F869 /* FDAlertViewAnimation.swift */,
+				267EE1B520C44A4C00D7F869 /* FDAlertAction.swift */,
+				267EE1BD20C4783F00D7F869 /* SetLetterSpacing.swift */,
+			);
+			path = FDAlertView;
+			sourceTree = "<group>";
+		};
+		267EE1B020C448E200D7F869 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				267EE19E20C4482700D7F869 /* ViewController.swift */,
+				267EE1B220C448ED00D7F869 /* storyboards */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		267EE1B120C448E700D7F869 /* ressources */ = {
+			isa = PBXGroup;
+			children = (
+				267EE1A320C4482800D7F869 /* Assets.xcassets */,
+			);
+			path = ressources;
+			sourceTree = "<group>";
+		};
+		267EE1B220C448ED00D7F869 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				267EE1A020C4482700D7F869 /* Main.storyboard */,
+				267EE1A520C4482800D7F869 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				267EE1A720C4482800D7F869 /* LaunchScreen.storyboard in Resources */,
+				267EE1B820C44CB700D7F869 /* FDAlertView.xib in Resources */,
 				267EE1A420C4482800D7F869 /* Assets.xcassets in Resources */,
 				267EE1A220C4482700D7F869 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267EE1BE20C4783F00D7F869 /* SetLetterSpacing.swift in Sources */,
+				267EE1BA20C44FCB00D7F869 /* FDAlertViewAnimation.swift in Sources */,
 				267EE19F20C4482700D7F869 /* ViewController.swift in Sources */,
+				267EE1B420C4490F00D7F869 /* FDAlertView.swift in Sources */,
+				267EE1B620C44A4C00D7F869 /* FDAlertAction.swift in Sources */,
 				267EE19D20C4482700D7F869 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3UM9FW8JQ;
 				INFOPLIST_FILE = FDAlertViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3UM9FW8JQ;
 				INFOPLIST_FILE = FDAlertViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
